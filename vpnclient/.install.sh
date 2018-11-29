@@ -22,15 +22,15 @@ echo
 echo " 1. Yes"
 echo " 2. No"
 echo
-echo "Please choose one of above number: "
-read tmp
+#echo "Please choose one of above number: "
+#read tmp
 echo
 
-if test "$tmp" != "1"
-then
-	echo "Installation is aborted."
-	exit 1
-fi
+#if test "$tmp" != "1"
+#then
+#	echo "Installation is aborted."
+#	exit 1
+#fi
 
 cat ReadMeFirst_License.txt
 
@@ -42,25 +42,25 @@ echo
 echo " 1. Yes"
 echo " 2. No"
 echo
-echo "Please choose one of above number: "
-read tmp
+#echo "Please choose one of above number: "
+#read tmp
 echo
 
-while true
-do
-	if test "$tmp" = "2"
-	then
-		echo "Installation is aborted."
-		exit 1
-	fi
-	if test "$tmp" = "1"
-	then
-		break
-	fi
-	echo "Please choose one of above number: "
-	read tmp
-	echo
-done
+#while true
+#do
+#	if test "$tmp" = "2"
+#	then
+#		echo "Installation is aborted."
+#		exit 1
+#	fi
+#	if test "$tmp" = "1"
+#	then
+#		break
+#	fi
+#	echo "Please choose one of above number: "
+#	read tmp
+#	echo
+#done
 
 echo 
 echo "Did you agree the License Agreement ?"
@@ -68,15 +68,15 @@ echo
 echo 1. Agree
 echo 2. Do Not Agree
 echo
-echo "Please choose one of above number: "
-read tmp
+#echo "Please choose one of above number: "
+#read tmp
 echo
 
-if test "$tmp" != "1"
-then
-	echo "Installation is aborted."
-	exit 1
-fi
+#if test "$tmp" != "1"
+#then
+#	echo "Installation is aborted."
+#	exit 1
+#fi
 
 make i_read_and_agree_the_license_agreement
 
