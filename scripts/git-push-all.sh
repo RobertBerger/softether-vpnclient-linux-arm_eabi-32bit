@@ -2,7 +2,7 @@
    echo "We are on ${HOSTNAME} so let's push!"
    git push origin master
    git push --tags
-   git push all -u
+   git push --all -u
 #   git push -u origin bbb_porting
 #else
 #   echo "We are on ${HOSTNAME} and not on X61s"
