@@ -4,8 +4,8 @@
 # Copyright (c) SoftEther VPN Project at University of Tsukuba, Japan. All Rights Reserved.
 # Platform: linux-armeabi-32bit
 
-CC=gcc
-OPTIONS=-O2 -fsigned-char -lm -ldl -lrt -Wl,--no-warn-mismatch -lpthread -L./ lib/libssl.a lib/libcrypto.a lib/libiconv.a lib/libcharset.a lib/libedit.a lib/libncurses.a lib/libz.a
+#CC=gcc
+OPTIONS=$(LDFLAGS) -O2 -fsigned-char -lm -ldl -lrt -Wl,--no-warn-mismatch -lpthread -L./ lib/libssl.a lib/libcrypto.a lib/libiconv.a lib/libcharset.a lib/libedit.a lib/libncurses.a lib/libz.a
 
 default:
 	@./.install.sh
